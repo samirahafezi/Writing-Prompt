@@ -1,16 +1,27 @@
-# React + Vite
+# Writing Prompt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A browser-based creative writing practice app. Get a random prompt and write.
 
-Currently, two official plugins are available:
+Live at: https://samirahafezi.github.io/Writing-Prompt/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Dev
 
-## React Compiler
+```bash
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Deploying to GitHub Pages
 
-## Expanding the ESLint configuration
+The `docs/` folder is the static build served by GitHub Pages (from the `main` branch `/docs` folder).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+After making changes, rebuild and push:
+
+```bash
+npm run build
+git add docs
+git commit -m "Rebuild"
+git push
+```
+
+GitHub Pages will update automatically within a minute or two.
